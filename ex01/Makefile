@@ -6,7 +6,7 @@
 #    By: dabdygal <dabdygal@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/15 15:43:23 by dabdygal          #+#    #+#              #
-#    Updated: 2024/05/01 13:50:04 by dabdygal         ###   ########.fr        #
+#    Updated: 2024/06/04 12:50:03 by dabdygal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ OBJ_FILES = $(SRC_FILES:.cpp=.o)
 
 CXX = c++
 
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic-errors
 
 # ************************************RULES*********************************** #
 
@@ -42,7 +42,7 @@ $(addprefix $(OBJ_DIR)/,$(OBJ_FILES)): $(addprefix $(INCLUDE_DIR)/,$(INCLUDE_FIL
 
 all: $(BIN_NAME)
 
-clean: $(addprefix $(OBJ_DIR)/,$(OBJ_FILES))
+clean:
 	rm -f $(addprefix $(OBJ_DIR)/,$(OBJ_FILES))
 
 fclean: clean

@@ -6,7 +6,7 @@
 /*   By: dabdygal <dabdygal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 10:22:01 by dabdygal          #+#    #+#             */
-/*   Updated: 2024/05/06 15:15:12 by dabdygal         ###   ########.fr       */
+/*   Updated: 2024/06/03 13:49:49 by dabdygal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 	class PhoneBook
 	{
 	private:
-		Contact	_contacts[MAX_CONTACTS];
+		Contact			_contacts[MAX_CONTACTS];
 	protected:
 	public:
 		PhoneBook( void );
