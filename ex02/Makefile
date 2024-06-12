@@ -6,13 +6,13 @@
 #    By: dabdygal <dabdygal@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/15 15:43:23 by dabdygal          #+#    #+#              #
-#    Updated: 2024/06/07 15:59:36 by dabdygal         ###   ########.fr        #
+#    Updated: 2024/06/07 15:59:31 by dabdygal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # *********************************INITIALIZE********************************* #
 
-BIN_NAME = phonebook
+BIN_NAME = tests
 
 INCLUDE_DIR = .
 
@@ -20,12 +20,10 @@ SRC_DIR = .
 
 OBJ_DIR = .
 
-INCLUDE_FILES = PhoneBook.class.hpp \
-				Contact.class.hpp
+INCLUDE_FILES = Account.hpp
 
-SRC_FILES = main.cpp \
-			PhoneBook.class.cpp \
-			Contact.class.cpp
+SRC_FILES = tests.cpp \
+			Account.cpp
 
 OBJ_FILES = $(SRC_FILES:.cpp=.o)
 
